@@ -1,5 +1,5 @@
 # FyersAPI
-Sample codes to get started with the Fyers API
+Sample codes to get started with the Fyers API <br>
 Fyers API documentation : https://myapi.fyers.in/docs/
 
 ## Create App
