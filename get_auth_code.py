@@ -30,7 +30,10 @@ session_url =  session.generate_authcode()
 
 # to automate the login procedure, I have used selenium webdriver
 # launch firefox  driver
-driver = webdriver.Firefox(executable_path=r'geckodriver.exe')
+options = Options()
+options.add_argument('--headless')
+options.add_argument('--disable-gpu')
+driver = webdriver.Firefox(executable_path=r'geckodriver.exe', options=options)
 driver.get(session_url)
 
 
