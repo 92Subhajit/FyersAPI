@@ -10,7 +10,7 @@ from time import sleep
 import urllib.parse as urlparse
 import warnings
 warnings.filterwarnings("ignore", category=DeprecationWarning) 
-from datetime import date
+import datetime
 
 import pandas as pd
 
@@ -85,8 +85,8 @@ class Fyers:
             self.print_message('Authentication code validated')
             response = self.session.generate_token()
             access_token = response['access_token']
-            self.print_message('Access token generated')
-            self.fyers = fyersModel.FyersModel(client_id=self.app_id, token=access_token,log_path="\log")
+            self.print_message('Access token generated \n')
+            self.fyers = fyersModel.FyersModel(client_id=self.app_id, token=access_token,log_path="./log")
         except:
             pass
 
@@ -94,8 +94,18 @@ class Fyers:
         data = {"symbol": symbol,"resolution":resolution,"date_format":"1","range_from": startdate.strftime( "%Y-%m-%d"),"range_to":enddate.strftime( "%Y-%m-%d"),"cont_flag":"1"}
         data = self.fyers.history(data)
         col = ['Date', 'Open', 'High', 'Low', 'Close', 'Volume']
-        price_data = pd.DataFrame(data['candles'], columns= col)
+        if data['s'] == 'ok':
+            price_data = pd.DataFrame(data['candles'], columns= col)
+            
+            if resolution == 'D':
+                price_data['Date'] = pd.to_datetime(price_data['Date'],unit='s')
+            else:
+                price_data['Date'] = pd.to_datetime(price_data['Date'],unit='s') + datetime.timedelta(hours=5, minutes=30)
+            price_data = price_data.set_index('Date')
+
+            
+        else:
+            print(data['message'])
+            price_data = pd.DataFrame()
         del data
-        price_data['Date'] = pd.to_datetime(price_data['Date'],unit='s')
-        price_data = price_data.set_index('Date')
         return price_data
