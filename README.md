@@ -12,6 +12,7 @@ To create an app, you need to follow the following steps:-
     <li> App Name </li>
     <li> Redirect URL </li>
     <li> Description (Optional) </li>
-    <li> App Permissions - Refer Permissions Template </li>
     <li> Image (Optional) </li>
 </ol>
+
+
