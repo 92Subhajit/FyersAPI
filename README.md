@@ -15,7 +15,7 @@ To create an app, you need to follow the following steps:-
     <li> Image (Optional) </li>
 </ol>
 
-## file description
+## File description
 
 <ol>
     <li> config.ini : store all credentials in this file </li>
