@@ -1,23 +1,17 @@
 # FyersAPI
  Sample codes to get started with the Fyers API
 
-# Creat App
+## Create App
 
 To create an app, you need to follow the following steps:-
 
 <ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+    <li> Login to API Dashboard </li>
+    <li> Click on Create App </li>
+    <li> Provide the following details </li>
+    <li> App Name </li>
+    <li> Redirect URL </li>
+    <li> Description (Optional) </li>
+    <li> App Permissions - Refer Permissions Template </li>
+    <li> Image (Optional) </li>
 </ol>
-
-    1. 
-Login to API Dashboard
-Click on Create App
-Provide the following details
-App Name
-Redirect URL
-Description (Optional)
-App Permissions - Refer Permissions Template
-Image (Optional)
