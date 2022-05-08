@@ -4,11 +4,9 @@
 ## Create App
 
 To create an app, you need to follow the following steps:-
-This site was built using [GitHub Pages](https://pages.github.com/).
-
 
 <ol>
-    <li> Login to [API Dashboard](https://api-dashboard.fyers.in/) </li>
+    <li> Login to <a href = 'https://api-dashboard.fyers.in/'> API Dashboard</a> </li>
     <li> Click on Create App </li>
     <li> Provide the following details </li>
     <li> App Name </li>
