@@ -20,5 +20,6 @@ To create an app, you need to follow the following steps:-
 
 <ol>
     <li> config.ini : store all credentials in this file </li>
+    <li> generate_sessionurl.py : generate a session url. This url will provide the authorization code.
 </ol>
 
