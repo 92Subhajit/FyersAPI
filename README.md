@@ -1,7 +1,9 @@
 # FyersAPI
  Sample codes to get started with the Fyers API
 
+
 ## Create App
+<details>
 
 To create an app, you need to follow the following steps:-
 
@@ -14,5 +16,5 @@ To create an app, you need to follow the following steps:-
     <li> Description (Optional) </li>
     <li> Image (Optional) </li>
 </ol>
-
+</details>
 
