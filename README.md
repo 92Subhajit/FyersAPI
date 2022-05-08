@@ -20,6 +20,7 @@ To create an app, you need to follow the following steps:-
 
 <ol>
     <li> config.ini : store all credentials in this file </li>
-    <li> generate_sessionurl.py : generate a session url. This url will provide the authorization code.
+    <li> generate_sessionurl.py : This code will generate a session URL. This URL will be further use to get the authorization code. </li>
+    <li> get_auth_code.py :  To get the authorization code from the session URL, we need to open the session URL and log in to the fyers account every time. This code will automate the process of getting an authorization code. </li>
 </ol>
 
