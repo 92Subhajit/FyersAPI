@@ -15,17 +15,9 @@ To create an app, you need to follow the following steps:-
     <li> Image (Optional) </li>
 </ol>
 
-## config.ini
-Store all credentials in this config.ini file 
+## file description
 
-'''
-[fyers]
-app_id = app_id
-app_secret = app_secret
-redirect_url= redirect_url
-user_id = user_id
-password = password
-two_fa = pin
-
-'''
+<ol>
+    <li> config.ini : store all credentials in this file </li>
+</ol>
 
